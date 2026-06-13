@@ -36,25 +36,28 @@ A transport company quotes customers for freight jobs, schedules them, and assig
 
 ## How to run
 
-**Oracle (Tasks 1–6 JSON):** in SQL Developer, run in order —
+**Oracle (Tasks 1–6 JSON):** in SQL Developer, run the files in `scripts/sql/` in order —
 `brm-schema-insert.sql` (base) → `T1` → `T2` → `T3` → `T4` → `T5` → `T6-brm-json.sql`.
 
-**MongoDB (Task 6):** open `T6-brm-mongo.mongodb.js` in the MongoDB shell / VS Code MongoDB extension and run against your database.
+**MongoDB (Task 6):** open `scripts/mongodb/T6-brm-mongo.mongodb.js` in the MongoDB shell / VS Code MongoDB extension and run against your database.
 
 ## Repository structure
 
 ```
 .
-├── ass2-student/
-│   ├── brm-schema-insert.sql      # provided base schema + data
-│   ├── T1-brm-schema.sql          # schema: employee, job, quote + FKs
-│   ├── T2-brm-insert.sql          # data load
-│   ├── T3-brm-dm.sql              # sequences, inserts, update, delete
-│   ├── T4-brm-mods.sql            # ALTER + servicing subsystem
-│   ├── T5-brm-select.sql          # 3 analytical queries
-│   ├── T6-brm-json.sql            # relational → JSON
-│   └── T6-brm-mongo.mongodb.js    # MongoDB document model + queries
-└── readme.md
+├── scripts/
+│   ├── sql/
+│   │   ├── brm-schema-insert.sql   # provided base schema + data
+│   │   ├── T1-brm-schema.sql       # schema: employee, job, quote + FKs
+│   │   ├── T2-brm-insert.sql       # data load
+│   │   ├── T3-brm-dm.sql           # sequences, inserts, update, delete
+│   │   ├── T4-brm-mods.sql         # ALTER + servicing subsystem
+│   │   ├── T5-brm-select.sql       # 3 analytical queries
+│   │   └── T6-brm-json.sql         # relational -> JSON
+│   └── mongodb/
+│       └── T6-brm-mongo.mongodb.js # MongoDB document model + queries
+├── readme.md
+└── .gitignore
 ```
 
 ## Skills shown
