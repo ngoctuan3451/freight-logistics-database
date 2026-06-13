@@ -1,0 +1,13 @@
+# Assignment brief (Monash copyright — keep private)
+FIT2094_2026S1_Ass2_Brief.pdf
+
+# Oracle spool / output
+*.lst
+*.log
+*.out
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
